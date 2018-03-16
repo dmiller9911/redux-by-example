@@ -1,0 +1,24 @@
+{
+    "defaultSeverity": "error",
+    "extends": [
+        "tslint:recommended"
+    ],
+    "jsRules": {
+        "indent": [true, "spaces", 2],
+        "object-literal-sort-keys": false,
+        "semicolon": true,
+        "quotemark": [true, "single"]
+    },
+    "rules": {
+        "array-type": [true, "array"],
+        "indent": [true, "spaces", 2],
+        "interface-name": false,
+        "object-literal-sort-keys": false,
+        "semicolon": true,
+        "quotemark": [true, "single"],
+        "member-ordering": false,
+        "no-var-requires": false,
+        "object-literal-key-quotes": false
+    },
+    "rulesDirectory": []
+}

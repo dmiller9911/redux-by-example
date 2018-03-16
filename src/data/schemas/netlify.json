@@ -1,0 +1,1999 @@
+{
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "Netlify",
+  "type": "object",
+  "isImmutable": false,
+  "properties": {
+    "ui": {
+      "type": "object",
+      "isImmutable": true,
+      "immutableType": "map",
+      "properties": {
+        "ui": {
+          "type": "object",
+          "isImmutable": true,
+          "immutableType": "map",
+          "properties": {
+            "a11yMessage": {
+              "type": "string",
+              "isImmutable": false
+            }
+          }
+        }
+      }
+    },
+    "sites": {
+      "type": "object",
+      "isImmutable": true,
+      "immutableType": "map",
+      "properties": {
+        "entities": {
+          "type": "object",
+          "isImmutable": true,
+          "immutableType": "map",
+          "patternProperties": {
+            "\\S+": {
+              "type": "object",
+              "isImmutable": true,
+              "immutableType": "map",
+              "properties": {
+                "plan_data": {
+                  "type": "object",
+                  "isImmutable": true,
+                  "immutableType": "map",
+                  "properties": {
+                    "yearly_rate_cents": {
+                      "type": "number",
+                      "isImmutable": false
+                    },
+                    "domain_aliases": {
+                      "type": "boolean",
+                      "isImmutable": false
+                    },
+                    "use_functions": {
+                      "type": "boolean",
+                      "isImmutable": false
+                    },
+                    "branch_deploy": {
+                      "type": "boolean",
+                      "isImmutable": false
+                    },
+                    "build_node_pool": {
+                      "type": "string",
+                      "isImmutable": false
+                    },
+                    "managed_dns": {
+                      "type": "boolean",
+                      "isImmutable": false
+                    },
+                    "build_cluster": {
+                      "type": "string",
+                      "isImmutable": false
+                    },
+                    "prerendering": {
+                      "type": "boolean",
+                      "isImmutable": false
+                    },
+                    "split_testing": {
+                      "type": "boolean",
+                      "isImmutable": false
+                    },
+                    "ssl": {
+                      "type": "string",
+                      "isImmutable": false
+                    },
+                    "rate_cents": {
+                      "type": "number",
+                      "isImmutable": false
+                    },
+                    "form_processing": {
+                      "type": "boolean",
+                      "isImmutable": false
+                    },
+                    "asset_acceleration": {
+                      "type": "boolean",
+                      "isImmutable": false
+                    },
+                    "secure_site": {
+                      "type": "boolean",
+                      "isImmutable": false
+                    },
+                    "proxying": {
+                      "type": "boolean",
+                      "isImmutable": false
+                    },
+                    "geo_ip": {
+                      "type": "boolean",
+                      "isImmutable": false
+                    },
+                    "build_gc_exchange": {
+                      "type": "string",
+                      "isImmutable": false
+                    },
+                    "title": {
+                      "type": "string",
+                      "isImmutable": false
+                    },
+                    "cdn_propagation": {
+                      "type": "string",
+                      "isImmutable": false
+                    },
+                    "id": {
+                      "type": "string",
+                      "isImmutable": false
+                    },
+                    "cdn_network": {
+                      "type": "string",
+                      "isImmutable": false
+                    }
+                  }
+                },
+                "prerender_headers": {
+                  "type": "null",
+                  "isImmutable": false
+                },
+                "paid_individual_site_subscription": {
+                  "type": "null",
+                  "isImmutable": false
+                },
+                "domain_aliases": {
+                  "type": "array",
+                  "isImmutable": true,
+                  "immutableType": "ordered_list",
+                  "items": {
+                    "type": "null",
+                    "isImmutable": false
+                  }
+                },
+                "use_functions": {
+                  "type": "null",
+                  "isImmutable": false
+                },
+                "identity_instance_id": {
+                  "type": "null",
+                  "isImmutable": false
+                },
+                "ssl_status": {
+                  "type": "null",
+                  "isImmutable": false
+                },
+                "jwt_secret": {
+                  "type": "null",
+                  "isImmutable": false
+                },
+                "notification_email": {
+                  "type": "null",
+                  "isImmutable": false
+                },
+                "managed_dns": {
+                  "type": "boolean",
+                  "isImmutable": false
+                },
+                "plan": {
+                  "type": "string",
+                  "isImmutable": false
+                },
+                "created_at": {
+                  "type": "string",
+                  "isImmutable": false
+                },
+                "name": {
+                  "type": "string",
+                  "isImmutable": false
+                },
+                "build_id": {
+                  "type": "string",
+                  "isImmutable": false
+                },
+                "account_type": {
+                  "type": "string",
+                  "isImmutable": false
+                },
+                "ssl": {
+                  "type": "boolean",
+                  "isImmutable": false
+                },
+                "external_contributors_enabled": {
+                  "type": "boolean",
+                  "isImmutable": false
+                },
+                "active_subscription_ids": {
+                  "type": "array",
+                  "isImmutable": true,
+                  "immutableType": "ordered_list",
+                  "items": {
+                    "type": "null",
+                    "isImmutable": false
+                  }
+                },
+                "url": {
+                  "type": "string",
+                  "isImmutable": false
+                },
+                "user_id": {
+                  "type": "string",
+                  "isImmutable": false
+                },
+                "processing_settings": {
+                  "type": "object",
+                  "isImmutable": true,
+                  "immutableType": "map",
+                  "properties": {
+                    "css": {
+                      "type": "object",
+                      "isImmutable": true,
+                      "immutableType": "map",
+                      "properties": {
+                        "bundle": {
+                          "type": "boolean",
+                          "isImmutable": false
+                        },
+                        "minify": {
+                          "type": "boolean",
+                          "isImmutable": false
+                        }
+                      }
+                    },
+                    "js": {
+                      "type": "object",
+                      "isImmutable": true,
+                      "immutableType": "map",
+                      "properties": {
+                        "bundle": {
+                          "type": "boolean",
+                          "isImmutable": false
+                        },
+                        "minify": {
+                          "type": "boolean",
+                          "isImmutable": false
+                        }
+                      }
+                    },
+                    "images": {
+                      "type": "object",
+                      "isImmutable": true,
+                      "immutableType": "map",
+                      "properties": {
+                        "optimize": {
+                          "type": "boolean",
+                          "isImmutable": false
+                        }
+                      }
+                    },
+                    "html": {
+                      "type": "object",
+                      "isImmutable": true,
+                      "immutableType": "map",
+                      "properties": {
+                        "pretty_urls": {
+                          "type": "boolean",
+                          "isImmutable": false
+                        }
+                      }
+                    },
+                    "skip": {
+                      "type": "boolean",
+                      "isImmutable": false
+                    }
+                  }
+                },
+                "error_message": {
+                  "type": "null",
+                  "isImmutable": false
+                },
+                "branches": {
+                  "type": "array",
+                  "isImmutable": true,
+                  "immutableType": "ordered_list",
+                  "items": {
+                    "type": "object",
+                    "isImmutable": true,
+                    "immutableType": "map",
+                    "properties": {
+                      "created_at": {
+                        "type": "string",
+                        "isImmutable": false
+                      },
+                      "name": {
+                        "type": "string",
+                        "isImmutable": false
+                      },
+                      "slug": {
+                        "type": "string",
+                        "isImmutable": false
+                      },
+                      "url": {
+                        "type": "string",
+                        "isImmutable": false
+                      },
+                      "site_id": {
+                        "type": "string",
+                        "isImmutable": false
+                      },
+                      "deploy_id": {
+                        "type": "string",
+                        "isImmutable": false
+                      },
+                      "updated_at": {
+                        "type": "string",
+                        "isImmutable": false
+                      },
+                      "id": {
+                        "type": "object",
+                        "isImmutable": true,
+                        "immutableType": "map",
+                        "properties": {
+                          "$oid": {
+                            "type": "string",
+                            "isImmutable": false
+                          }
+                        }
+                      },
+                      "ssl_url": {
+                        "type": "string",
+                        "isImmutable": false
+                      }
+                    }
+                  }
+                },
+                "state": {
+                  "type": "string",
+                  "isImmutable": false
+                },
+                "custom_domain": {
+                  "type": "string",
+                  "isImmutable": false
+                },
+                "isFetching": {
+                  "type": "boolean",
+                  "isImmutable": false
+                },
+                "site_id": {
+                  "type": "string",
+                  "isImmutable": false
+                },
+                "deploy_id": {
+                  "type": "string",
+                  "isImmutable": false
+                },
+                "build_settings": {
+                  "type": "object",
+                  "isImmutable": true,
+                  "immutableType": "map",
+                  "properties": {
+                    "repo_url": {
+                      "type": "string",
+                      "isImmutable": false
+                    },
+                    "allowed_branches": {
+                      "type": "array",
+                      "isImmutable": true,
+                      "immutableType": "ordered_list",
+                      "items": {
+                        "type": "string",
+                        "isImmutable": false
+                      }
+                    },
+                    "repo_type": {
+                      "type": "string",
+                      "isImmutable": false
+                    },
+                    "public_repo": {
+                      "type": "boolean",
+                      "isImmutable": false
+                    },
+                    "functions_dir": {
+                      "type": "null",
+                      "isImmutable": false
+                    },
+                    "created_at": {
+                      "type": "string",
+                      "isImmutable": false
+                    },
+                    "private_logs": {
+                      "type": "null",
+                      "isImmutable": false
+                    },
+                    "dir": {
+                      "type": "string",
+                      "isImmutable": false
+                    },
+                    "env": {
+                      "type": "object",
+                      "isImmutable": true,
+                      "immutableType": "map",
+                      "properties": {}
+                    },
+                    "repo_branch": {
+                      "type": "string",
+                      "isImmutable": false
+                    },
+                    "provider": {
+                      "type": "string",
+                      "isImmutable": false
+                    },
+                    "base": {
+                      "type": "null",
+                      "isImmutable": false
+                    },
+                    "repo_path": {
+                      "type": "string",
+                      "isImmutable": false
+                    },
+                    "updated_at": {
+                      "type": "string",
+                      "isImmutable": false
+                    },
+                    "cmd": {
+                      "type": "string",
+                      "isImmutable": false
+                    }
+                  }
+                },
+                "screenshot_url": {
+                  "type": "string",
+                  "isImmutable": false
+                },
+                "capabilities": {
+                  "type": "object",
+                  "isImmutable": true,
+                  "immutableType": "map",
+                  "properties": {
+                    "yearly_rate_cents": {
+                      "type": "number",
+                      "isImmutable": false
+                    },
+                    "domain_aliases": {
+                      "type": "boolean",
+                      "isImmutable": false
+                    },
+                    "use_functions": {
+                      "type": "boolean",
+                      "isImmutable": false
+                    },
+                    "branch_deploy": {
+                      "type": "boolean",
+                      "isImmutable": false
+                    },
+                    "build_node_pool": {
+                      "type": "string",
+                      "isImmutable": false
+                    },
+                    "managed_dns": {
+                      "type": "boolean",
+                      "isImmutable": false
+                    },
+                    "build_cluster": {
+                      "type": "string",
+                      "isImmutable": false
+                    },
+                    "prerendering": {
+                      "type": "boolean",
+                      "isImmutable": false
+                    },
+                    "split_testing": {
+                      "type": "boolean",
+                      "isImmutable": false
+                    },
+                    "ssl": {
+                      "type": "string",
+                      "isImmutable": false
+                    },
+                    "rate_cents": {
+                      "type": "number",
+                      "isImmutable": false
+                    },
+                    "form_processing": {
+                      "type": "boolean",
+                      "isImmutable": false
+                    },
+                    "asset_acceleration": {
+                      "type": "boolean",
+                      "isImmutable": false
+                    },
+                    "secure_site": {
+                      "type": "boolean",
+                      "isImmutable": false
+                    },
+                    "proxying": {
+                      "type": "boolean",
+                      "isImmutable": false
+                    },
+                    "geo_ip": {
+                      "type": "boolean",
+                      "isImmutable": false
+                    },
+                    "build_gc_exchange": {
+                      "type": "string",
+                      "isImmutable": false
+                    },
+                    "title": {
+                      "type": "string",
+                      "isImmutable": false
+                    },
+                    "cdn_propagation": {
+                      "type": "string",
+                      "isImmutable": false
+                    },
+                    "id": {
+                      "type": "string",
+                      "isImmutable": false
+                    },
+                    "cdn_network": {
+                      "type": "string",
+                      "isImmutable": false
+                    }
+                  }
+                },
+                "deploy_url": {
+                  "type": "string",
+                  "isImmutable": false
+                },
+                "updated_at": {
+                  "type": "string",
+                  "isImmutable": false
+                },
+                "premium": {
+                  "type": "boolean",
+                  "isImmutable": false
+                },
+                "published_deploy": {
+                  "type": "object",
+                  "isImmutable": true,
+                  "immutableType": "map",
+                  "properties": {
+                    "branch": {
+                      "type": "string",
+                      "isImmutable": false
+                    },
+                    "review_id": {
+                      "type": "null",
+                      "isImmutable": false
+                    },
+                    "published_at": {
+                      "type": "string",
+                      "isImmutable": false
+                    },
+                    "deploy_ssl_url": {
+                      "type": "string",
+                      "isImmutable": false
+                    },
+                    "available_functions": {
+                      "type": "array",
+                      "isImmutable": true,
+                      "immutableType": "ordered_list",
+                      "items": {
+                        "type": "null",
+                        "isImmutable": false
+                      }
+                    },
+                    "deploy_time": {
+                      "type": "number",
+                      "isImmutable": false
+                    },
+                    "commit_url": {
+                      "type": "null",
+                      "isImmutable": false
+                    },
+                    "review_url": {
+                      "type": "null",
+                      "isImmutable": false
+                    },
+                    "created_at": {
+                      "type": "string",
+                      "isImmutable": false
+                    },
+                    "locked": {
+                      "type": "null",
+                      "isImmutable": false
+                    },
+                    "commit_ref": {
+                      "type": "null",
+                      "isImmutable": false
+                    },
+                    "name": {
+                      "type": "string",
+                      "isImmutable": false
+                    },
+                    "build_id": {
+                      "type": "string",
+                      "isImmutable": false
+                    },
+                    "url": {
+                      "type": "string",
+                      "isImmutable": false
+                    },
+                    "context": {
+                      "type": "string",
+                      "isImmutable": false
+                    },
+                    "user_id": {
+                      "type": "string",
+                      "isImmutable": false
+                    },
+                    "error_message": {
+                      "type": "null",
+                      "isImmutable": false
+                    },
+                    "skipped": {
+                      "type": "null",
+                      "isImmutable": false
+                    },
+                    "state": {
+                      "type": "string",
+                      "isImmutable": false
+                    },
+                    "site_id": {
+                      "type": "string",
+                      "isImmutable": false
+                    },
+                    "screenshot_url": {
+                      "type": "string",
+                      "isImmutable": false
+                    },
+                    "deploy_url": {
+                      "type": "string",
+                      "isImmutable": false
+                    },
+                    "updated_at": {
+                      "type": "string",
+                      "isImmutable": false
+                    },
+                    "log_access_attributes": {
+                      "type": "object",
+                      "isImmutable": true,
+                      "immutableType": "map",
+                      "properties": {
+                        "type": {
+                          "type": "string",
+                          "isImmutable": false
+                        },
+                        "url": {
+                          "type": "string",
+                          "isImmutable": false
+                        }
+                      }
+                    },
+                    "title": {
+                      "type": "string",
+                      "isImmutable": false
+                    },
+                    "id": {
+                      "type": "string",
+                      "isImmutable": false
+                    },
+                    "required_functions": {
+                      "type": "array",
+                      "isImmutable": true,
+                      "immutableType": "ordered_list",
+                      "items": {
+                        "type": "null",
+                        "isImmutable": false
+                      }
+                    },
+                    "ssl_url": {
+                      "type": "string",
+                      "isImmutable": false
+                    },
+                    "admin_url": {
+                      "type": "string",
+                      "isImmutable": false
+                    },
+                    "required": {
+                      "type": "array",
+                      "isImmutable": true,
+                      "immutableType": "ordered_list",
+                      "items": {
+                        "type": "null",
+                        "isImmutable": false
+                      }
+                    }
+                  }
+                },
+                "dns_zone_id": {
+                  "type": "null",
+                  "isImmutable": false
+                },
+                "force_ssl": {
+                  "type": "boolean",
+                  "isImmutable": false
+                },
+                "prerender": {
+                  "type": "null",
+                  "isImmutable": false
+                },
+                "parent_user_id": {
+                  "type": "null",
+                  "isImmutable": false
+                },
+                "id": {
+                  "type": "string",
+                  "isImmutable": false
+                },
+                "deploy_hook": {
+                  "type": "string",
+                  "isImmutable": false
+                },
+                "claimed": {
+                  "type": "boolean",
+                  "isImmutable": false
+                },
+                "password": {
+                  "type": "null",
+                  "isImmutable": false
+                },
+                "ssl_url": {
+                  "type": "string",
+                  "isImmutable": false
+                },
+                "ssl_plan": {
+                  "type": "null",
+                  "isImmutable": false
+                },
+                "account_name": {
+                  "type": "string",
+                  "isImmutable": false
+                },
+                "account_slug": {
+                  "type": "string",
+                  "isImmutable": false
+                },
+                "max_domain_aliases": {
+                  "type": "number",
+                  "isImmutable": false
+                },
+                "admin_url": {
+                  "type": "string",
+                  "isImmutable": false
+                }
+              }
+            }
+          }
+        },
+        "pages": {
+          "type": "object",
+          "isImmutable": true,
+          "immutableType": "map",
+          "properties": {
+            "sites-[personal]": {
+              "type": "object",
+              "isImmutable": true,
+              "immutableType": "map",
+              "properties": {
+                "last": {
+                  "type": "number",
+                  "isImmutable": false
+                },
+                "current": {
+                  "type": "number",
+                  "isImmutable": false
+                },
+                "ids": {
+                  "type": "array",
+                  "isImmutable": true,
+                  "immutableType": "ordered_list",
+                  "items": {
+                    "type": "string",
+                    "isImmutable": false
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "deploys": {
+      "type": "object",
+      "isImmutable": true,
+      "immutableType": "map",
+      "properties": {
+        "entities": {
+          "type": "object",
+          "isImmutable": true,
+          "immutableType": "map",
+          "patternProperties": {
+            "\\S+": {
+              "type": "object",
+              "isImmutable": true,
+              "immutableType": "map",
+              "properties": {
+                "branch": {
+                  "type": "string",
+                  "isImmutable": false
+                },
+                "review_id": {
+                  "type": "null",
+                  "isImmutable": false
+                },
+                "published_at": {
+                  "type": "string",
+                  "isImmutable": false
+                },
+                "deploy_ssl_url": {
+                  "type": "string",
+                  "isImmutable": false
+                },
+                "available_functions": {
+                  "type": "array",
+                  "isImmutable": true,
+                  "immutableType": "ordered_list",
+                  "items": {
+                    "type": "null",
+                    "isImmutable": false
+                  }
+                },
+                "deploy_time": {
+                  "type": "number",
+                  "isImmutable": false
+                },
+                "commit_url": {
+                  "type": "null",
+                  "isImmutable": false
+                },
+                "review_url": {
+                  "type": "null",
+                  "isImmutable": false
+                },
+                "created_at": {
+                  "type": "string",
+                  "isImmutable": false
+                },
+                "locked": {
+                  "type": "null",
+                  "isImmutable": false
+                },
+                "commit_ref": {
+                  "type": "null",
+                  "isImmutable": false
+                },
+                "name": {
+                  "type": "string",
+                  "isImmutable": false
+                },
+                "build_id": {
+                  "type": "string",
+                  "isImmutable": false
+                },
+                "url": {
+                  "type": "string",
+                  "isImmutable": false
+                },
+                "context": {
+                  "type": "string",
+                  "isImmutable": false
+                },
+                "user_id": {
+                  "type": "string",
+                  "isImmutable": false
+                },
+                "error_message": {
+                  "type": "null",
+                  "isImmutable": false
+                },
+                "skipped": {
+                  "type": "null",
+                  "isImmutable": false
+                },
+                "state": {
+                  "type": "string",
+                  "isImmutable": false
+                },
+                "isFetching": {
+                  "type": "boolean",
+                  "isImmutable": false
+                },
+                "site_id": {
+                  "type": "string",
+                  "isImmutable": false
+                },
+                "screenshot_url": {
+                  "type": "string",
+                  "isImmutable": false
+                },
+                "deploy_url": {
+                  "type": "string",
+                  "isImmutable": false
+                },
+                "updated_at": {
+                  "type": "string",
+                  "isImmutable": false
+                },
+                "log_access_attributes": {
+                  "type": "object",
+                  "isImmutable": true,
+                  "immutableType": "map",
+                  "properties": {
+                    "type": {
+                      "type": "string",
+                      "isImmutable": false
+                    },
+                    "url": {
+                      "type": "string",
+                      "isImmutable": false
+                    }
+                  }
+                },
+                "title": {
+                  "type": "string",
+                  "isImmutable": false
+                },
+                "id": {
+                  "type": "string",
+                  "isImmutable": false
+                },
+                "required_functions": {
+                  "type": "array",
+                  "isImmutable": true,
+                  "immutableType": "ordered_list",
+                  "items": {
+                    "type": "null",
+                    "isImmutable": false
+                  }
+                },
+                "ssl_url": {
+                  "type": "string",
+                  "isImmutable": false
+                },
+                "admin_url": {
+                  "type": "string",
+                  "isImmutable": false
+                },
+                "required": {
+                  "type": "array",
+                  "isImmutable": true,
+                  "immutableType": "ordered_list",
+                  "items": {
+                    "type": "null",
+                    "isImmutable": false
+                  }
+                }
+              }
+            }
+          }
+        },
+        "pages": {
+          "type": "object",
+          "isImmutable": true,
+          "immutableType": "map",
+          "properties": {
+            "ef9de5ef-ea80-42cb-a973-8c814effc362-deploy previews-1": {
+              "type": "object",
+              "isImmutable": true,
+              "immutableType": "map",
+              "properties": {
+                "last": {
+                  "type": "number",
+                  "isImmutable": false
+                },
+                "current": {
+                  "type": "number",
+                  "isImmutable": false
+                },
+                "ids": {
+                  "type": "array",
+                  "isImmutable": true,
+                  "immutableType": "ordered_list",
+                  "items": {
+                    "type": "null",
+                    "isImmutable": false
+                  }
+                }
+              }
+            },
+            "ef9de5ef-ea80-42cb-a973-8c814effc362-master-1": {
+              "type": "object",
+              "isImmutable": true,
+              "immutableType": "map",
+              "properties": {
+                "next": {
+                  "type": "number",
+                  "isImmutable": false
+                },
+                "last": {
+                  "type": "number",
+                  "isImmutable": false
+                },
+                "current": {
+                  "type": "number",
+                  "isImmutable": false
+                },
+                "ids": {
+                  "type": "array",
+                  "isImmutable": true,
+                  "immutableType": "ordered_list",
+                  "items": {
+                    "type": "string",
+                    "isImmutable": false
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "buildHooks": {
+      "type": "object",
+      "isImmutable": true,
+      "immutableType": "map",
+      "properties": {
+        "entities": {
+          "type": "object",
+          "isImmutable": true,
+          "immutableType": "map",
+          "properties": {}
+        },
+        "pages": {
+          "type": "object",
+          "isImmutable": true,
+          "immutableType": "map",
+          "properties": {}
+        }
+      }
+    },
+    "subscriptions": {
+      "type": "object",
+      "isImmutable": true,
+      "immutableType": "map",
+      "properties": {
+        "entities": {
+          "type": "object",
+          "isImmutable": true,
+          "immutableType": "map",
+          "properties": {}
+        },
+        "pages": {
+          "type": "object",
+          "isImmutable": true,
+          "immutableType": "map",
+          "properties": {}
+        }
+      }
+    },
+    "members": {
+      "type": "object",
+      "isImmutable": true,
+      "immutableType": "map",
+      "properties": {
+        "entities": {
+          "type": "object",
+          "isImmutable": true,
+          "immutableType": "map",
+          "properties": {}
+        },
+        "pages": {
+          "type": "object",
+          "isImmutable": true,
+          "immutableType": "map",
+          "properties": {}
+        }
+      }
+    },
+    "authProviders": {
+      "type": "object",
+      "isImmutable": true,
+      "immutableType": "map",
+      "properties": {
+        "entities": {
+          "type": "object",
+          "isImmutable": true,
+          "immutableType": "map",
+          "properties": {}
+        },
+        "pages": {
+          "type": "object",
+          "isImmutable": true,
+          "immutableType": "map",
+          "properties": {}
+        }
+      }
+    },
+    "applications": {
+      "type": "object",
+      "isImmutable": true,
+      "immutableType": "map",
+      "properties": {
+        "entities": {
+          "type": "object",
+          "isImmutable": true,
+          "immutableType": "map",
+          "properties": {}
+        },
+        "pages": {
+          "type": "object",
+          "isImmutable": true,
+          "immutableType": "map",
+          "properties": {}
+        }
+      }
+    },
+    "repos": {
+      "type": "object",
+      "isImmutable": true,
+      "immutableType": "map",
+      "properties": {
+        "entities": {
+          "type": "object",
+          "isImmutable": true,
+          "immutableType": "map",
+          "properties": {}
+        },
+        "pages": {
+          "type": "object",
+          "isImmutable": true,
+          "immutableType": "map",
+          "properties": {}
+        }
+      }
+    },
+    "organizations": {
+      "type": "object",
+      "isImmutable": true,
+      "immutableType": "map",
+      "properties": {
+        "entities": {
+          "type": "object",
+          "isImmutable": true,
+          "immutableType": "map",
+          "properties": {}
+        },
+        "pages": {
+          "type": "object",
+          "isImmutable": true,
+          "immutableType": "map",
+          "properties": {}
+        }
+      }
+    },
+    "dragging": {
+      "type": "object",
+      "isImmutable": true,
+      "immutableType": "map",
+      "properties": {}
+    },
+    "user": {
+      "type": "object",
+      "isImmutable": true,
+      "immutableType": "map",
+      "properties": {
+        "last_login": {
+          "type": "string",
+          "isImmutable": false
+        },
+        "avatar_url": {
+          "type": "string",
+          "isImmutable": false
+        },
+        "created_at": {
+          "type": "string",
+          "isImmutable": false
+        },
+        "login_providers": {
+          "type": "array",
+          "isImmutable": true,
+          "immutableType": "ordered_list",
+          "items": {
+            "type": "string",
+            "isImmutable": false
+          }
+        },
+        "affiliate_id": {
+          "type": "string",
+          "isImmutable": false
+        },
+        "uid": {
+          "type": "null",
+          "isImmutable": false
+        },
+        "onboarding_progress": {
+          "type": "object",
+          "isImmutable": true,
+          "immutableType": "map",
+          "properties": {
+            "slides": {
+              "type": "string",
+              "isImmutable": false
+            }
+          }
+        },
+        "support_priority": {
+          "type": "number",
+          "isImmutable": false
+        },
+        "site_count": {
+          "type": "number",
+          "isImmutable": false
+        },
+        "id": {
+          "type": "string",
+          "isImmutable": false
+        },
+        "full_name": {
+          "type": "string",
+          "isImmutable": false
+        },
+        "email": {
+          "type": "string",
+          "isImmutable": false
+        },
+        "access_token": {
+          "type": "string",
+          "isImmutable": false
+        }
+      }
+    },
+    "git": {
+      "type": "object",
+      "isImmutable": true,
+      "immutableType": "map",
+      "properties": {}
+    },
+    "config": {
+      "type": "object",
+      "isImmutable": true,
+      "immutableType": "map",
+      "properties": {
+        "apiId": {
+          "type": "string",
+          "isImmutable": false
+        },
+        "apiBbase": {
+          "type": "string",
+          "isImmutable": false
+        },
+        "github_id": {
+          "type": "string",
+          "isImmutable": false
+        },
+        "siteDomain": {
+          "type": "string",
+          "isImmutable": false
+        },
+        "siteId": {
+          "type": "string",
+          "isImmutable": false
+        },
+        "firebase": {
+          "type": "string",
+          "isImmutable": false
+        },
+        "heuristicsGitProvider": {
+          "type": "string",
+          "isImmutable": false
+        }
+      }
+    },
+    "uploads": {
+      "type": "object",
+      "isImmutable": true,
+      "immutableType": "map",
+      "properties": {}
+    },
+    "billing": {
+      "type": "object",
+      "isImmutable": true,
+      "immutableType": "map",
+      "properties": {}
+    },
+    "templateFlow": {
+      "type": "null",
+      "isImmutable": false
+    },
+    "certificates": {
+      "type": "object",
+      "isImmutable": true,
+      "immutableType": "map",
+      "properties": {}
+    },
+    "dnsZones": {
+      "type": "object",
+      "isImmutable": true,
+      "immutableType": "map",
+      "properties": {
+        "entities": {
+          "type": "object",
+          "isImmutable": true,
+          "immutableType": "map",
+          "properties": {}
+        },
+        "pages": {
+          "type": "object",
+          "isImmutable": true,
+          "immutableType": "map",
+          "properties": {}
+        }
+      }
+    },
+    "dnsRecords": {
+      "type": "object",
+      "isImmutable": true,
+      "immutableType": "map",
+      "properties": {
+        "entities": {
+          "type": "object",
+          "isImmutable": true,
+          "immutableType": "map",
+          "properties": {}
+        },
+        "pages": {
+          "type": "object",
+          "isImmutable": true,
+          "immutableType": "map",
+          "properties": {}
+        }
+      }
+    },
+    "hooks": {
+      "type": "object",
+      "isImmutable": true,
+      "immutableType": "map",
+      "properties": {
+        "entities": {
+          "type": "object",
+          "isImmutable": true,
+          "immutableType": "map",
+          "properties": {}
+        },
+        "pages": {
+          "type": "object",
+          "isImmutable": true,
+          "immutableType": "map",
+          "properties": {}
+        }
+      }
+    },
+    "forms": {
+      "type": "object",
+      "isImmutable": true,
+      "immutableType": "map",
+      "properties": {
+        "entities": {
+          "type": "object",
+          "isImmutable": true,
+          "immutableType": "map",
+          "properties": {}
+        },
+        "pages": {
+          "type": "object",
+          "isImmutable": true,
+          "immutableType": "map",
+          "properties": {
+            "ef9de5ef-ea80-42cb-a973-8c814effc362": {
+              "type": "object",
+              "isImmutable": true,
+              "immutableType": "map",
+              "properties": {
+                "last": {
+                  "type": "number",
+                  "isImmutable": false
+                },
+                "current": {
+                  "type": "number",
+                  "isImmutable": false
+                },
+                "ids": {
+                  "type": "array",
+                  "isImmutable": true,
+                  "immutableType": "ordered_list",
+                  "items": {
+                    "type": "null",
+                    "isImmutable": false
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "functions": {
+      "type": "object",
+      "isImmutable": true,
+      "immutableType": "map",
+      "properties": {}
+    },
+    "submissions": {
+      "type": "object",
+      "isImmutable": true,
+      "immutableType": "map",
+      "properties": {
+        "entities": {
+          "type": "object",
+          "isImmutable": true,
+          "immutableType": "map",
+          "properties": {}
+        },
+        "pages": {
+          "type": "object",
+          "isImmutable": true,
+          "immutableType": "map",
+          "properties": {
+            "site-ef9de5ef-ea80-42cb-a973-8c814effc362": {
+              "type": "object",
+              "isImmutable": true,
+              "immutableType": "map",
+              "properties": {
+                "last": {
+                  "type": "number",
+                  "isImmutable": false
+                },
+                "current": {
+                  "type": "number",
+                  "isImmutable": false
+                },
+                "ids": {
+                  "type": "array",
+                  "isImmutable": true,
+                  "immutableType": "ordered_list",
+                  "items": {
+                    "type": "null",
+                    "isImmutable": false
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "paymentMethods": {
+      "type": "object",
+      "isImmutable": true,
+      "immutableType": "map",
+      "properties": {
+        "entities": {
+          "type": "object",
+          "isImmutable": true,
+          "immutableType": "map",
+          "properties": {}
+        },
+        "pages": {
+          "type": "object",
+          "isImmutable": true,
+          "immutableType": "map",
+          "properties": {}
+        }
+      }
+    },
+    "resellers": {
+      "type": "object",
+      "isImmutable": true,
+      "immutableType": "map",
+      "properties": {
+        "entities": {
+          "type": "object",
+          "isImmutable": true,
+          "immutableType": "map",
+          "properties": {}
+        },
+        "pages": {
+          "type": "object",
+          "isImmutable": true,
+          "immutableType": "map",
+          "properties": {}
+        }
+      }
+    },
+    "accounts": {
+      "type": "object",
+      "isImmutable": true,
+      "immutableType": "map",
+      "properties": {
+        "entities": {
+          "type": "object",
+          "isImmutable": true,
+          "immutableType": "map",
+          "properties": {
+            "dmiller9911": {
+              "type": "object",
+              "isImmutable": true,
+              "immutableType": "map",
+              "properties": {
+                "type_id": {
+                  "type": "string",
+                  "isImmutable": false
+                },
+                "site_jwt_secret": {
+                  "type": "null",
+                  "isImmutable": false
+                },
+                "payment_method_id": {
+                  "type": "string",
+                  "isImmutable": false
+                },
+                "deploy_notifications_per_repo": {
+                  "type": "null",
+                  "isImmutable": false
+                },
+                "billing_period": {
+                  "type": "null",
+                  "isImmutable": false
+                },
+                "roles_allowed": {
+                  "type": "array",
+                  "isImmutable": true,
+                  "immutableType": "ordered_list",
+                  "items": {
+                    "type": "string",
+                    "isImmutable": false
+                  }
+                },
+                "created_at": {
+                  "type": "string",
+                  "isImmutable": false
+                },
+                "user_capabilities": {
+                  "type": "object",
+                  "isImmutable": true,
+                  "immutableType": "map",
+                  "properties": {
+                    "accounts": {
+                      "type": "object",
+                      "isImmutable": true,
+                      "immutableType": "map",
+                      "properties": {
+                        "c": {
+                          "type": "boolean",
+                          "isImmutable": false
+                        },
+                        "r": {
+                          "type": "boolean",
+                          "isImmutable": false
+                        },
+                        "u": {
+                          "type": "boolean",
+                          "isImmutable": false
+                        },
+                        "d": {
+                          "type": "boolean",
+                          "isImmutable": false
+                        }
+                      }
+                    },
+                    "sites": {
+                      "type": "object",
+                      "isImmutable": true,
+                      "immutableType": "map",
+                      "properties": {
+                        "c": {
+                          "type": "boolean",
+                          "isImmutable": false
+                        },
+                        "r": {
+                          "type": "boolean",
+                          "isImmutable": false
+                        },
+                        "u": {
+                          "type": "boolean",
+                          "isImmutable": false
+                        },
+                        "d": {
+                          "type": "boolean",
+                          "isImmutable": false
+                        }
+                      }
+                    },
+                    "members": {
+                      "type": "object",
+                      "isImmutable": true,
+                      "immutableType": "map",
+                      "properties": {
+                        "c": {
+                          "type": "boolean",
+                          "isImmutable": false
+                        },
+                        "r": {
+                          "type": "boolean",
+                          "isImmutable": false
+                        },
+                        "u": {
+                          "type": "boolean",
+                          "isImmutable": false
+                        },
+                        "d": {
+                          "type": "boolean",
+                          "isImmutable": false
+                        }
+                      }
+                    },
+                    "billing": {
+                      "type": "object",
+                      "isImmutable": true,
+                      "immutableType": "map",
+                      "properties": {
+                        "c": {
+                          "type": "boolean",
+                          "isImmutable": false
+                        },
+                        "r": {
+                          "type": "boolean",
+                          "isImmutable": false
+                        },
+                        "u": {
+                          "type": "boolean",
+                          "isImmutable": false
+                        },
+                        "d": {
+                          "type": "boolean",
+                          "isImmutable": false
+                        }
+                      }
+                    }
+                  }
+                },
+                "name": {
+                  "type": "string",
+                  "isImmutable": false
+                },
+                "slug": {
+                  "type": "string",
+                  "isImmutable": false
+                },
+                "owner_ids": {
+                  "type": "array",
+                  "isImmutable": true,
+                  "immutableType": "ordered_list",
+                  "items": {
+                    "type": "string",
+                    "isImmutable": false
+                  }
+                },
+                "site_capabilities": {
+                  "type": "object",
+                  "isImmutable": true,
+                  "immutableType": "map",
+                  "properties": {
+                    "yearly_rate_cents": {
+                      "type": "number",
+                      "isImmutable": false
+                    },
+                    "domain_aliases": {
+                      "type": "boolean",
+                      "isImmutable": false
+                    },
+                    "branch_deploy": {
+                      "type": "boolean",
+                      "isImmutable": false
+                    },
+                    "build_node_pool": {
+                      "type": "string",
+                      "isImmutable": false
+                    },
+                    "managed_dns": {
+                      "type": "boolean",
+                      "isImmutable": false
+                    },
+                    "build_cluster": {
+                      "type": "string",
+                      "isImmutable": false
+                    },
+                    "prerendering": {
+                      "type": "boolean",
+                      "isImmutable": false
+                    },
+                    "split_testing": {
+                      "type": "boolean",
+                      "isImmutable": false
+                    },
+                    "ssl": {
+                      "type": "string",
+                      "isImmutable": false
+                    },
+                    "rate_cents": {
+                      "type": "number",
+                      "isImmutable": false
+                    },
+                    "form_processing": {
+                      "type": "boolean",
+                      "isImmutable": false
+                    },
+                    "asset_acceleration": {
+                      "type": "boolean",
+                      "isImmutable": false
+                    },
+                    "secure_site": {
+                      "type": "boolean",
+                      "isImmutable": false
+                    },
+                    "proxying": {
+                      "type": "boolean",
+                      "isImmutable": false
+                    },
+                    "geo_ip": {
+                      "type": "boolean",
+                      "isImmutable": false
+                    },
+                    "build_gc_exchange": {
+                      "type": "string",
+                      "isImmutable": false
+                    },
+                    "title": {
+                      "type": "string",
+                      "isImmutable": false
+                    },
+                    "cdn_propagation": {
+                      "type": "string",
+                      "isImmutable": false
+                    },
+                    "id": {
+                      "type": "string",
+                      "isImmutable": false
+                    },
+                    "cdn_network": {
+                      "type": "string",
+                      "isImmutable": false
+                    }
+                  }
+                },
+                "saml_enabled": {
+                  "type": "boolean",
+                  "isImmutable": false
+                },
+                "billing_name": {
+                  "type": "string",
+                  "isImmutable": false
+                },
+                "type_name": {
+                  "type": "string",
+                  "isImmutable": false
+                },
+                "isFetching": {
+                  "type": "boolean",
+                  "isImmutable": false
+                },
+                "site_password": {
+                  "type": "null",
+                  "isImmutable": false
+                },
+                "saml_config": {
+                  "type": "null",
+                  "isImmutable": false
+                },
+                "capabilities": {
+                  "type": "object",
+                  "isImmutable": true,
+                  "immutableType": "map",
+                  "properties": {}
+                },
+                "updated_at": {
+                  "type": "string",
+                  "isImmutable": false
+                },
+                "billing_email": {
+                  "type": "string",
+                  "isImmutable": false
+                },
+                "payments_gateway_name": {
+                  "type": "null",
+                  "isImmutable": false
+                },
+                "type": {
+                  "type": "string",
+                  "isImmutable": false
+                },
+                "id": {
+                  "type": "string",
+                  "isImmutable": false
+                },
+                "billing_details": {
+                  "type": "null",
+                  "isImmutable": false
+                }
+              }
+            }
+          }
+        },
+        "pages": {
+          "type": "object",
+          "isImmutable": true,
+          "immutableType": "map",
+          "properties": {
+            "accounts": {
+              "type": "object",
+              "isImmutable": true,
+              "immutableType": "map",
+              "properties": {
+                "last": {
+                  "type": "number",
+                  "isImmutable": false
+                },
+                "current": {
+                  "type": "number",
+                  "isImmutable": false
+                },
+                "ids": {
+                  "type": "array",
+                  "isImmutable": true,
+                  "immutableType": "ordered_list",
+                  "items": {
+                    "type": "string",
+                    "isImmutable": false
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "accountMembers": {
+      "type": "object",
+      "isImmutable": true,
+      "immutableType": "map",
+      "properties": {
+        "entities": {
+          "type": "object",
+          "isImmutable": true,
+          "immutableType": "map",
+          "properties": {}
+        },
+        "pages": {
+          "type": "object",
+          "isImmutable": true,
+          "immutableType": "map",
+          "properties": {}
+        }
+      }
+    },
+    "accountReceipts": {
+      "type": "object",
+      "isImmutable": true,
+      "immutableType": "map",
+      "properties": {
+        "entities": {
+          "type": "object",
+          "isImmutable": true,
+          "immutableType": "map",
+          "properties": {}
+        },
+        "pages": {
+          "type": "object",
+          "isImmutable": true,
+          "immutableType": "map",
+          "properties": {}
+        }
+      }
+    },
+    "trafficSplits": {
+      "type": "object",
+      "isImmutable": true,
+      "immutableType": "map",
+      "properties": {
+        "entities": {
+          "type": "object",
+          "isImmutable": true,
+          "immutableType": "map",
+          "properties": {}
+        },
+        "pages": {
+          "type": "object",
+          "isImmutable": true,
+          "immutableType": "map",
+          "properties": {
+            "ef9de5ef-ea80-42cb-a973-8c814effc362": {
+              "type": "object",
+              "isImmutable": true,
+              "immutableType": "map",
+              "properties": {
+                "ids": {
+                  "type": "array",
+                  "isImmutable": true,
+                  "immutableType": "ordered_list",
+                  "items": {
+                    "type": "null",
+                    "isImmutable": false
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "audit": {
+      "type": "object",
+      "isImmutable": true,
+      "immutableType": "map",
+      "properties": {
+        "entities": {
+          "type": "object",
+          "isImmutable": true,
+          "immutableType": "map",
+          "properties": {}
+        },
+        "pages": {
+          "type": "object",
+          "isImmutable": true,
+          "immutableType": "map",
+          "properties": {}
+        }
+      }
+    },
+    "identity": {
+      "type": "object",
+      "isImmutable": true,
+      "immutableType": "map",
+      "properties": {}
+    },
+    "identityUsers": {
+      "type": "object",
+      "isImmutable": true,
+      "immutableType": "map",
+      "properties": {
+        "entities": {
+          "type": "object",
+          "isImmutable": true,
+          "immutableType": "map",
+          "properties": {}
+        },
+        "pages": {
+          "type": "object",
+          "isImmutable": true,
+          "immutableType": "map",
+          "properties": {}
+        }
+      }
+    },
+    "services": {
+      "type": "object",
+      "isImmutable": true,
+      "immutableType": "map",
+      "properties": {
+        "entities": {
+          "type": "object",
+          "isImmutable": true,
+          "immutableType": "map",
+          "properties": {}
+        },
+        "pages": {
+          "type": "object",
+          "isImmutable": true,
+          "immutableType": "map",
+          "properties": {}
+        }
+      }
+    },
+    "routing": {
+      "type": "object",
+      "isImmutable": false,
+      "properties": {
+        "locationBeforeTransitions": {
+          "type": "object",
+          "isImmutable": false,
+          "properties": {
+            "pathname": {
+              "type": "string",
+              "isImmutable": false
+            },
+            "search": {
+              "type": "string",
+              "isImmutable": false
+            },
+            "hash": {
+              "type": "string",
+              "isImmutable": false
+            },
+            "state": {
+              "type": "null",
+              "isImmutable": false
+            },
+            "action": {
+              "type": "string",
+              "isImmutable": false
+            },
+            "key": {
+              "type": "string",
+              "isImmutable": false
+            },
+            "query": {
+              "type": "object",
+              "isImmutable": false,
+              "properties": {}
+            }
+          }
+        }
+      }
+    }
+  }
+}
